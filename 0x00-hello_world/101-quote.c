@@ -1,7 +1,7 @@
 #include <unistd.h>
 /**
  * main - prints stderr around stdout
- * return: End of the Program
+ * return: Always 1 (Success)
  */
 int main(void)
 {
