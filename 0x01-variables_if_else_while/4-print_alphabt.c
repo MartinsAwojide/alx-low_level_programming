@@ -10,9 +10,12 @@ int main(void)
 {
 	char i;
 
-	for (i = 'a'; (i <= 'z' && i != 'e' && i != 'q'); i++)
+	for (i = 'a'; i <= 'z'; i++)
 	{
-	putchar(i);
+		if (i != 'e' && != 'g')
+		{
+		putchar(i);
+		}
 	}
 
 	putchar('\n');
