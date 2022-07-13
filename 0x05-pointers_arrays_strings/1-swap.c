@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- *  reset_to_98 - updates var value to reset_to_98
+ *  swap_int - swap variables pointed to 
  *  @a: first variable
  *  @b: second variable
  *  Return: void on Success
