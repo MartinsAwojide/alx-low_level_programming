@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- *  swap_int - swap variables pointed to 
+ *  swap_int - swap variables pointed to
  *  @a: first variable
  *  @b: second variable
  *  Return: void on Success
