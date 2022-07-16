@@ -4,7 +4,7 @@
  *leet - encodes a string to 1337
  *@str: The string to be encoded
  *
- *REturn: A pointer to the encoded string
+ *Return: A pointer to the encoded string
  */
 
 char *leet(char *str)
@@ -15,10 +15,13 @@ char *leet(char *str)
 
 	while (str[indx1])
 	{
-		if (str[indx1] == leet[indx2] ||
-			str[indx1] - 32 == leet[indx2])
+		for (indx2 = 0; indx2 <= 7; indx2++)
 		{
-			str[indx1] = indx2 + '0';
+			if (str[indx1] == leet[indx2] ||
+				str[indx1] - 32 == leet[indx2])
+			{
+				str[indx1] = indx2 + '0';
+			}
 		}
 		indx1++;
 	}
