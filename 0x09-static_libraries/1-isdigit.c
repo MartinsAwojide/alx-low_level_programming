@@ -11,6 +11,4 @@ int _isdigit(int c)
 	return (c >= 48 && c <= 57);
 
 }
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
+
