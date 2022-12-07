@@ -1,11 +1,11 @@
 CC:= gcc
-SRC:= ${wildcard *.c}
-OBJ:= ${wildcard *.o}
+SRC:= main.c school.c
+OBJ:= ${SRC:.c=.o}
 NAME:= school
 
-all: school school.o main.o
+all: ${NAME} ${OBJ}
 
-school: ${OBJ}
+${NAME}: ${OBJ}
 	${CC} $? -o $@
 
 ${OBJ}: ${SRC}
