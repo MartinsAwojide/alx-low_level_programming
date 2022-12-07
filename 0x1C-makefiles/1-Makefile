@@ -1,0 +1,9 @@
+SRC := ${wildcard *.c}
+CC := ${gcc}
+
+all: school.o
+
+school.o: ${SRC}
+	${CC} ${SRC} -o $@
+
+
