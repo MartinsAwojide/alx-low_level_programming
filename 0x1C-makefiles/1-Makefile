@@ -1,5 +1,5 @@
 SRC := ${wildcard *.c}
-CC := ${gcc}
+CC := gcc
 
 all: school.o
 

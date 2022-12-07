@@ -1,7 +1,7 @@
-CC:= ${gcc}
+CC:= gcc
 SRC:= ${wildcard *.c}
 OBJ:= ${wildcard *.o}
-NAME:= ${school}
+NAME:= school
 
 all: school school.o main.o
 
@@ -10,3 +10,5 @@ school: ${OBJ}
 
 ${OBJ}: ${SRC}
 	${CC} -c -o $@ $^
+
+
