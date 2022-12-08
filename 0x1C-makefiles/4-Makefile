@@ -3,12 +3,13 @@ CC:= gcc
 SRC:= main.c school.c
 OBJ:= ${SRC:.c=.o}
 RM:= rm -f
+CFLAGS:= -Wall -Werror -Wextra -pedantic
 
 all: ${NAME} ${OBJ}
 	${CC} ${OBJ} -o ${NAME}
 
 ${OBJ}: ${SRC}
-	${CC} -c -o $@ $?
+	${CC} ${CFLAGS} -c -o $@ $?
 
 .PHONY: clean oclean fclean re
 
