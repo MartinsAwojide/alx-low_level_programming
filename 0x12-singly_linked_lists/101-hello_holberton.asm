@@ -1,5 +1,4 @@
 ; File: 101-hello_holberton.asm
-; Auth: Gedeon Obae Gekonge
 ; Desc: 64-bit assembly program that prints
 ;       Hello, Holberton followed by a new line.
 
